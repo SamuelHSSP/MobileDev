@@ -1,7 +1,7 @@
 # Mobile App Development with Python
 With this repository, you can see the application of Python in mobile applications development.
-Two technologies in use here are Kivy and KivyMD.
-Kivy allows you to build cross-platform apps with just slight changes. That means you can build an app for desktop, and deploy the same app for other platforms such as iOS and Android.
+[Kivy](https://en.wikipedia.org/wiki/Kivy_(framework)) and KivyMD are the main technologies used for developing fully-functional mobile apps with Python.
+Kivy allows you to build cross-platform apps with just slight changes. That means you can build an app for desktop, and deploy the same app for other platforms such as iOS and Android. In fact, you can also build games with Kivy!
 ## Quickstart
 It's time to get started building mobile apps with the programming language you love!
 Follow the instructions below to set up Kivy and KivyMD on your computer.
