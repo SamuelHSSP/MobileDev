@@ -1,0 +1,48 @@
+ScreenManager:
+    id: sm
+                
+    Screen:
+        name: "main"
+
+        MDFloatLayout:
+            md_bg_color: (0.2196, 0.2353, 0.2980, 1)
+
+            MDTopAppBar:
+                title: "Pose Estimation"
+                md_bg_color: (1, 1, 1, 1)
+                pos_hint: {"top": 1}
+                elevation: 5
+                specific_text_color: (0.0157, 0.7059, 0.6745, 1)
+
+            BoxLayout:
+                id: box
+                md_bg_color: (1, 1, 1, 1)
+                pos_hint: {"center_x":.5, "center_y":.55}
+                size_hint: (1, .4)
+
+            MDIconButton:
+                icon: "record-circle-outline"
+                theme_text_color: "Custom"
+                text_color: (1, 1, 1, 1)
+                pos_hint: {"center_x": .5, "center_y": .15}
+                icon_size: "60sp"
+                on_release:
+
+            MDIcon:
+                icon: "record"
+                theme_text_color: "Custom"
+                text_color: (.824, .11, .23, 1)
+                pos_hint: {"center_x": .5, "center_y": .15}
+                size_hint_x: 1
+                font_size: "30sp"
+                halign: "center"
+
+            MDIcon:
+                id: status
+                text: "Tap to start camera"
+                theme_text_color: "Custom"
+                text_color: (1, 1, 1, 1)
+                font_style: "Caption"
+                pos_hint: {"center_x": .5, "center_y": .085}
+                size_hint_x: 1
+                halign: "center"
