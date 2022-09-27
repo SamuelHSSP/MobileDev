@@ -1,0 +1,40 @@
+ScreenManager:
+    id: sm
+                
+    Screen:
+        name: "main"
+
+        MDFloatLayout:
+            md_bg_color: (0.2196, 0.2353, 0.2980, 1)
+
+            MDTopAppBar:
+                title: "Pose Estimation"
+                md_bg_color: (1, 1, 1, 1)
+                pos_hint: {"top": 1}
+                elevation: 5
+                specific_text_color: (0.0157, 0.7059, 0.6745, 1)
+
+            MyCamera:
+                id: cam
+                md_bg_color: (0, 0, 0, 1)
+                pos_hint: {"center_x":.5, "center_y":.55}
+                size_hint: (1, .4)
+
+            MDIconButton:
+                icon: "record-circle-outline"
+                theme_text_color: "Custom"
+                text_color: (1, 1, 1, 1)
+                pos_hint: {"center_x": .5, "center_y": .15}
+                icon_size: "60sp"
+                on_release:
+                    cam.start() if cam.event is None \
+                    else cam.stop(sm)
+
+            MDIcon:
+                icon: "record"
+                theme_text_color: "Custom"
+                text_color: (.824, .11, .23, 1)
+                pos_hint: {"center_x": .5, "center_y": .15}
+                size_hint_x: 1
+                font_size: "30sp"
+                halign: "center"
